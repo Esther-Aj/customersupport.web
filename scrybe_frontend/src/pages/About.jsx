@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./App.module.scss";
+import styles from "../components/App.module.scss";
 
 import image1 from "../images/image1.svg";
 import icon1 from "../images/icon1.svg";
@@ -56,7 +56,7 @@ function About() {
             </p>
           </div>
           <div className={`${styles.column__right} ${styles.column}`}>
-            <img src={image1} alt="" srcset="" />
+            <img src={image1} alt="" />
           </div>
         </div>
       </div>
@@ -69,7 +69,7 @@ function About() {
               <div className={styles.wrap}>
                 <div className={styles.heading__icon}>
                   <h4>Customer Success</h4>
-                  <img src={icon3} alt="" srcset="" />
+                  <img src={icon3} alt="" />
                 </div>
                 <p>
                   Our number one goal is to see our customers suceed at
@@ -80,7 +80,7 @@ function About() {
               <div className={styles.wrap}>
                 <div className={styles.heading__icon}>
                   <h4>Teamwork</h4>
-                  <img src={icon1} alt="" srcset="" />
+                  <img src={icon1} alt="" />
                 </div>
                 <p>
                   The foundation of Scrybe is Teamwork. Every person in every
@@ -95,7 +95,7 @@ function About() {
               <div className={styles.wrap}>
                 <div className={styles.heading__icon}>
                   <h4>Creativity</h4>
-                  <img src={icon2} alt="" srcset="" />
+                  <img src={icon2} alt="" />
                 </div>
                 <p>
                   We are a team of creative and innovative people who think
@@ -106,7 +106,7 @@ function About() {
               <div className={styles.wrap}>
                 <div className={styles.heading__icon}>
                   <h4>Ownership</h4>
-                  <img src={icon4} alt="" srcset="" />
+                  <img src={icon4} alt="" />
                 </div>
                 <p>
                   We are more than employees at Scrybe. Every person that is a

@@ -2,7 +2,7 @@ import React from "react";
 
 import { Routes, Route } from "react-router-dom";
 import Dummy from "./components/Dummy";
-import About from "./components/About";
+import About from "./pages/About";
 
 
 function App() {
