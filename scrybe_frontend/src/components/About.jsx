@@ -1,10 +1,6 @@
 import React from "react";
 import styles from "./App.module.scss";
 
-
-
-
-
 import image1 from "./images/image1.svg";
 import icon1 from "./images/icon1.svg";
 import icon2 from "./images/icon2.svg";
@@ -23,22 +19,18 @@ import team6 from "./images/team6.png";
 import team7 from "./images/team7.png";
 import team8 from "./images/team8.png";
 
-
-
 function About() {
   return (
     <div className="App" data-testid="app-container">
-
-   
-   <div className={`${styles.container} ${styles.hero}`}>
+      <div className={`${styles.container} ${styles.hero}`}>
         <div className={styles.row}>
-        <div className={styles.contain}>
-          <h1 className={styles.heading}>
-            Scrybe helps businesses to make informed decisions{" "}
-            <span>faster </span>
-            <div className={styles.line}></div>
-          </h1>
-        </div>
+          <div className={styles.contain}>
+            <h1 className={styles.heading}>
+              Scrybe helps businesses to make informed decisions{" "}
+              <span>faster </span>
+              <div className={styles.line}></div>
+            </h1>
+          </div>
         </div>
         <h1 className={styles.heading}>Who we are</h1>
         <div className={`${styles.row} ${styles.row1}`}>
@@ -47,20 +39,21 @@ function About() {
               At Scrybe, we transcribe call recordings between customer support
               agents and customers to give sentimental analysis as we analyze
               transcriptions to give sentiment score of the conversation
-              (Positive, Neutral or Negative) 
-              </p>
-              <p>At Scrybe, our mission is to
-              provide businesses with intelligent, accurate, and precise intent
-              analysis to improve customer experience. We believe that through
-              the power of artificial intelligence, we can make a real
-              difference in the way businesses interact with their customers.
-              </p>
-              <p> We
-              believe that we can come together, to make the business world
+              (Positive, Neutral or Negative)
+            </p>
+            <p>
+              At Scrybe, our mission is to provide businesses with intelligent,
+              accurate, and precise intent analysis to improve customer
+              experience. We believe that through the power of artificial
+              intelligence, we can make a real difference in the way businesses
+              interact with their customers.
+            </p>
+            <p>
+              {" "}
+              We believe that we can come together, to make the business world
               better for all and this is what we are forever committed to. Our
-              slogan is <span>Speak, we listen</span> 
-              </p>
-          
+              slogan is <span>Speak, we listen</span>
+            </p>
           </div>
           <div className={`${styles.column__right} ${styles.column}`}>
             <img src={image1} alt="" srcset="" />
@@ -170,58 +163,53 @@ function About() {
             </p>
           </div>
           <div className={styles.row}>
-          <div className={styles.wrap2}>
-            <div className={styles.col}>
-              
-              <img src={team1} alt="" />
-              <h5>Mark Essien</h5>
-              <p>Advisor</p>
-            </div>
-            <div className={styles.col}>
-              <img src={team2} alt="" />
-              <h5>Aigbe Marvelous</h5>
-              <p>Advisor</p>
-            </div>
-            <div className={styles.col}>
-              <img src={team3} alt="" />
-              <h5>Collins Akpaka</h5>
-              <p>CEO</p>
-            </div>
-            <div className={styles.col}>
-              <img src={team4} alt="" />
-              <h5>Delphine Ogbonna</h5>
-              <p>Lead designer</p>
-            </div>
-            
-            <div className={styles.col}>
-              <img src={team5} alt="" />
-              <h5>Ugochukwu Odumegwu</h5>
-              <p>Back-End Lead</p>
-            </div>
-            <div className={styles.col}>
-              <img src={team6} alt="" />
-              <h5>Tochukwu Bedford</h5>
-              <p>Front-End Lead</p>
-            </div>
-            <div className={styles.col}>
-              <img src={team7} alt="" />
-              <h5>Alice Awobite</h5>
-              <p>Product Designer</p>
-            </div>
-            <div className={styles.col}>
-              <img src={team8} alt="" />
-              <h5>Favour Mustapha</h5>
-              <p>Product Designer</p>
-            </div>
-            <div className={styles.col}>
-              
-            </div>
+            <div className={styles.wrap2}>
+              <div className={styles.col}>
+                <img src={team1} alt="" />
+                <h5>Mark Essien</h5>
+                <p>Advisor</p>
+              </div>
+              <div className={styles.col}>
+                <img src={team2} alt="" />
+                <h5>Aigbe Marvelous</h5>
+                <p>Advisor</p>
+              </div>
+              <div className={styles.col}>
+                <img src={team3} alt="" />
+                <h5>Collins Akpaka</h5>
+                <p>CEO</p>
+              </div>
+              <div className={styles.col}>
+                <img src={team4} alt="" />
+                <h5>Delphine Ogbonna</h5>
+                <p>Lead designer</p>
+              </div>
+
+              <div className={styles.col}>
+                <img src={team5} alt="" />
+                <h5>Ugochukwu Odumegwu</h5>
+                <p>Back-End Lead</p>
+              </div>
+              <div className={styles.col}>
+                <img src={team6} alt="" />
+                <h5>Tochukwu Bedford</h5>
+                <p>Front-End Lead</p>
+              </div>
+              <div className={styles.col}>
+                <img src={team7} alt="" />
+                <h5>Alice Awobite</h5>
+                <p>Product Designer</p>
+              </div>
+              <div className={styles.col}>
+                <img src={team8} alt="" />
+                <h5>Favour Mustapha</h5>
+                <p>Product Designer</p>
+              </div>
+              <div className={styles.col}></div>
             </div>
           </div>
         </div>
       </div>
-      
-  
     </div>
   );
 }

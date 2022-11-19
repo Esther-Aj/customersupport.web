@@ -1,6 +1,7 @@
 import React from "react";
 import scrybeLogo from "../../assets/scrybe_logo_with_text.svg";
 
+
 function Dummy() {
   return (
     <div className="App" data-testid="app-container">
