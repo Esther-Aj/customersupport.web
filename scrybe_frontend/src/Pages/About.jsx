@@ -1,3 +1,4 @@
+
 import React from "react";
 import styles from "./App.module.scss";
 
@@ -7,9 +8,6 @@ import styles from "./App.module.scss";
 
 import image1 from "./images/image1.svg";
 import icon1 from "./images/icon1.svg";
-import icon2 from "./images/icon2.svg";
-import icon3 from "./images/icon3.svg";
-import icon4 from "./images/icon4.svg";
 import partner1 from "./images/partner1.svg";
 import partner2 from "./images/partner2.svg";
 import partner3 from "./images/partner3.svg";
@@ -25,12 +23,11 @@ import team8 from "./images/team8.png";
 
 
 
-function App() {
+function About() {
   return (
     <div className="App" data-testid="app-container">
-
    
-   <div className={`${styles.container} ${styles.hero}`}>
+     <div className={`${styles.container} ${styles.hero}`}>
         <div className={styles.row}>
         <div className={styles.contain}>
           <h1 className={styles.heading}>
@@ -41,26 +38,21 @@ function App() {
         </div>
         </div>
         <h1 className={styles.heading}>Who we are</h1>
-        <div className={`${styles.row} ${styles.row1}`}>
+        <div className={styles.row}>
           <div className={`${styles.column__left} ${styles.column}`}>
             <p>
               At Scrybe, we transcribe call recordings between customer support
               agents and customers to give sentimental analysis as we analyze
               transcriptions to give sentiment score of the conversation
-              (Positive, Neutral or Negative) 
-              </p>
-              <p>At Scrybe, our mission is to
+              (Positive, Neutral or Negative) At Scrybe, our mission is to
               provide businesses with intelligent, accurate, and precise intent
               analysis to improve customer experience. We believe that through
               the power of artificial intelligence, we can make a real
-              difference in the way businesses interact with their customers.
-              </p>
-              <p> We
+              difference in the way businesses interact with their customers. We
               believe that we can come together, to make the business world
               better for all and this is what we are forever committed to. Our
-              slogan is <span>Speak, we listen</span> 
-              </p>
-          
+              slogan is Speak, we listen
+            </p>
           </div>
           <div className={`${styles.column__right} ${styles.column}`}>
             <img src={image1} alt="" srcset="" />
@@ -87,7 +79,7 @@ function App() {
               <div className={styles.wrap}>
                 <div className={styles.heading__icon}>
                   <h4>Teamwork</h4>
-                  <img src={icon3} alt="" srcset="" />
+                  <img src={icon1} alt="" srcset="" />
                 </div>
                 <p>
                   The foundation of Scrybe is Teamwork. Every person in every
@@ -102,7 +94,7 @@ function App() {
               <div className={styles.wrap}>
                 <div className={styles.heading__icon}>
                   <h4>Creativity</h4>
-                  <img src={icon2} alt="" srcset="" />
+                  <img src={icon1} alt="" srcset="" />
                 </div>
                 <p>
                   We are a team of creative and innovative people who think
@@ -113,7 +105,7 @@ function App() {
               <div className={styles.wrap}>
                 <div className={styles.heading__icon}>
                   <h4>Ownership</h4>
-                  <img src={icon4} alt="" srcset="" />
+                  <img src={icon1} alt="" srcset="" />
                 </div>
                 <p>
                   We are more than employees at Scrybe. Every person that is a
@@ -196,12 +188,12 @@ function App() {
             <div className={styles.col}>
               <img src={team5} alt="" />
               <h5>Ugochukwu Odumegwu</h5>
-              <p>Back-End Lead</p>
+              <p>Front-End Lead</p>
             </div>
             <div className={styles.col}>
               <img src={team6} alt="" />
               <h5>Tochukwu Bedford</h5>
-              <p>Front-End Lead</p>
+              <p>Advisor</p>
             </div>
             <div className={styles.col}>
               <img src={team7} alt="" />
@@ -213,17 +205,14 @@ function App() {
               <h5>Favour Mustapha</h5>
               <p>Product Designer</p>
             </div>
-            <div className={styles.col}>
-              
-            </div>
             </div>
           </div>
         </div>
       </div>
       
-  
+    
     </div>
   );
 }
 
-export default App;
+export default About;

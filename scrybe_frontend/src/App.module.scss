@@ -21,6 +21,10 @@ $blue-bg:#E6F0FF;
   font-size: 20px;
   line-height: 26px;
   font-weight: 300;
+  @include mobile{
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 %h4{
   font-size: 24px;
@@ -59,7 +63,9 @@ $blue-bg:#E6F0FF;
 
 .container {
   padding: 100px;
-  background-color: rgb(219, 219, 219);
+  background-color:white;
+
+  
 
   .line{
     width: 100%;
@@ -75,17 +81,35 @@ $blue-bg:#E6F0FF;
     text-align: center;
     color: $text;
     padding-bottom: 40px;
+    
   
 
    @include mobile{
     font-size: 24px;
     line-height: 32px;
    }
+   
     
   }
   .contain{
     padding-left:100px;
     padding-right:100px;
+ 
+
+    @include tablet{
+      padding-left:0px;
+    padding-right:0px;
+    }
+    @include mobile{
+      padding-left:0px;
+    padding-right:0px;
+    }
+
+    .heading{
+      @include mobile{
+        padding: 0;
+      }
+    }
   }
   span {
     color: $blue;
@@ -115,6 +139,14 @@ $blue-bg:#E6F0FF;
 @include mobile{
     padding: 20px;
  }
+
+}
+.hero{
+  .row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .container__values{
@@ -129,6 +161,9 @@ $blue-bg:#E6F0FF;
       @include mobile{
         padding:0px;
       }  
+      @include tablet{
+        padding:0px;
+      } 
         
     }
 
@@ -146,9 +181,11 @@ $blue-bg:#E6F0FF;
         display: flex;
         align-items: center;
         margin-bottom: 20px;
+        justify-content: center;
 h4{
    
     margin-right: 30px;
+    
    
     
     @extend %h4;
@@ -165,9 +202,18 @@ h4{
         @extend %paragraph;
     }
     .row{
+      display: flex;
+      flex-direction: row;
+        
+
+      @include tablet{
+        flex-wrap: wrap;
+    }
+  
         @include mobile{
             flex-direction: row;
             flex-wrap: wrap;
+            padding-top: 30px;
         }
     }
     .companies{
@@ -175,13 +221,16 @@ h4{
         width:25%;
         align-items: center;
         padding:50px 0px;
+       
 
         @include tablet{
-            width:50%;
+            width:40%;
+            padding: 10px;
         }
 
 @include mobile{
-    width:50%;
+    width:35%;
+    padding: 10px;
 }
 
         img{
@@ -196,9 +245,12 @@ h4{
     .partners__text{
         padding:0px 150px;
 
-        @include mobile{
-            padding:0px; 
+        @include tablet{
+            padding:20px; 
         }
+        @include mobile{
+          padding:0px; 
+      }
     }
 }
 .container__team{
@@ -229,6 +281,11 @@ h4{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        
+        @include tablet{
+          justify-content: space-between;
+          gap:20px;
+        }
            
 
         @include mobile{
@@ -245,11 +302,16 @@ h4{
         text-align: center;
 
         @include mobile {
-            font-size: 12px;
+            font-size: 14px;
+            margin-bottom: 10px;
         }
     }
     p{
         @extend %paragraph;
+        
+        @include mobile{
+          font-size: 14px;
+        }
     }
     .team__text{
         padding:0px 150px;
@@ -259,12 +321,21 @@ h4{
         @include mobile{
             padding:0px; 
         }
+        @include tablet{
+          padding:20px; 
+        }
     }
 }
 .hero{
     .row{
         padding-top: 100px;
         padding-bottom: 100px;
+        @include tablet{
+          padding-top: 0px;
+        }
+        @include mobile{
+          padding-top: 0px;
+        }
     }
 h1{
     @include mobile{
@@ -279,3 +350,26 @@ h1{
     }
 
   }
+
+.row1{
+  display: flex;
+  align-items: center;
+  p{
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .column__left{
+    @include mobile{
+      padding-top: 0px;
+    }
+    
+  }
+  @include tablet{
+    padding: 20px 0px;
+  }
+  span{
+    font-weight: 600;
+    color:$text;
+  }
+
+ }
