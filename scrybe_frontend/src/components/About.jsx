@@ -1,23 +1,23 @@
 import React from "react";
 import styles from "./App.module.scss";
 
-import image1 from "./images/image1.svg";
-import icon1 from "./images/icon1.svg";
-import icon2 from "./images/icon2.svg";
-import icon3 from "./images/icon3.svg";
-import icon4 from "./images/icon4.svg";
-import partner1 from "./images/partner1.svg";
-import partner2 from "./images/partner2.svg";
-import partner3 from "./images/partner3.svg";
-import partner4 from "./images/partner4.svg";
-import team1 from "./images/team1.png";
-import team2 from "./images/team2.png";
-import team3 from "./images/team3.png";
-import team4 from "./images/team4.png";
-import team5 from "./images/team5.png";
-import team6 from "./images/team6.png";
-import team7 from "./images/team7.png";
-import team8 from "./images/team8.png";
+import image1 from "../images/image1.svg";
+import icon1 from "../images/icon1.svg";
+import icon2 from "../images/icon2.svg";
+import icon3 from "../images/icon3.svg";
+import icon4 from "../images/icon4.svg";
+import partner1 from "../images/partner1.svg";
+import partner2 from "../images/partner2.svg";
+import partner3 from "../images/partner3.svg";
+import partner4 from "../images/partner4.svg";
+import team1 from "../images/team1.png";
+import team2 from "../images/team2.png";
+import team3 from "../images/team3.png";
+import team4 from "../images/team4.png";
+import team5 from "../images/team5.png";
+import team6 from "../images/team6.png";
+import team7 from "../images/team7.png";
+import team8 from "../images/team8.png";
 
 function About() {
   return (
@@ -69,7 +69,7 @@ function About() {
               <div className={styles.wrap}>
                 <div className={styles.heading__icon}>
                   <h4>Customer Success</h4>
-                  <img src={icon1} alt="" srcset="" />
+                  <img src={icon3} alt="" srcset="" />
                 </div>
                 <p>
                   Our number one goal is to see our customers suceed at
@@ -80,7 +80,7 @@ function About() {
               <div className={styles.wrap}>
                 <div className={styles.heading__icon}>
                   <h4>Teamwork</h4>
-                  <img src={icon3} alt="" srcset="" />
+                  <img src={icon1} alt="" srcset="" />
                 </div>
                 <p>
                   The foundation of Scrybe is Teamwork. Every person in every

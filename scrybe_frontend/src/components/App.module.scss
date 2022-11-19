@@ -29,6 +29,7 @@ $blue-bg: #e6f0ff;
 %h4 {
   font-size: 24px;
   font-weight: 600;
+  color:$text;
 
   @include mobile {
     font-size: 20px;
@@ -37,6 +38,7 @@ $blue-bg: #e6f0ff;
 %h5 {
   font-size: 20px;
   font-weight: 600;
+  color:#313131;
 }
 
 .row {
@@ -169,7 +171,11 @@ $blue-bg: #e6f0ff;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    justify-content: center;
+
+    @include mobile{
+      justify-content: center;
+    }
+  
     h4 {
       margin-right: 30px;
 
@@ -311,12 +317,20 @@ $blue-bg: #e6f0ff;
     }
     @include mobile {
       padding-top: 0px;
+      padding-bottom: 50px;
     }
   }
   h1 {
     @include mobile {
       padding: 0px 50px;
     }
+   
+     
+    }
+    .heading{
+      @include mobile{
+        padding-bottom: 20px;
+      }
   }
 }
 .container {
